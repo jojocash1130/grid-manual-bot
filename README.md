@@ -93,7 +93,7 @@ Flask + SocketIO         ──→  real-time dashboard ──→  user controls
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/0xkcya/grid-manual-bot.git
+git clone https://github.com/jojocash1130/grid-manual-bot.git
 cd grid-manual-bot
 
 # 2. Install dependencies
