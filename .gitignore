@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# User data (API keys, state files, logs)
+data/
+
+# Environment
+.env
+
+# Encryption key
+.master_key
