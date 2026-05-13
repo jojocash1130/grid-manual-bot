@@ -27,7 +27,7 @@ Crypto.com is especially competitive for **perpetual contract** traders — deep
 >
 > **👉 [https://crypto.com/exch/bvmzsu9zuq](https://crypto.com/exch/bvmzsu9zuq)**
 >
-> If you have **high trading volume**, reach out for a **higher rebate tier** — see [Contact](#-contact) below.
+> **High volume trader?** DM [@beerponzi](https://t.me/beerponzi) on Telegram for a **custom rebate tier** — we'll make it worth your while.
 
 ---
 
