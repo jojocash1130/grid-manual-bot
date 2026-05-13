@@ -113,7 +113,7 @@ class CroWSOrderClient:
         self.is_connected = True
         self.is_logged_in = False
         logger.info("CRO WS order connected: %s", self.ws_url)
-        print(f"[CRO-ORDER] connected {self.ws_url}", flush=True)
+        logger.info("CRO WS order connected (print): %s", self.ws_url)
         time.sleep(1)
         payload, req_id = self._build_login_payload()
         logger.info("CRO WS auth request id=%s", req_id)
@@ -135,7 +135,7 @@ class CroWSOrderClient:
             if data.get("code") == 0:
                 self.is_logged_in = True
                 logger.info("CRO WS auth ok")
-                print("[CRO-ORDER] auth ok", flush=True)
+                logger.info("CRO WS auth ok (print)")
                 sub = {
                     "id": int(time.time() * 1000),
                     "method": "subscribe",
@@ -146,7 +146,7 @@ class CroWSOrderClient:
                 logger.info("CRO WS subscribing user.positions + user.order")
             else:
                 logger.error("CRO WS auth failed: %s", data)
-                print(f"[CRO-ORDER] auth failed: {data}", flush=True)
+                logger.error("CRO WS auth failed (print): %s", data)
             self._login_event.set()
             return
 
@@ -171,7 +171,7 @@ class CroWSOrderClient:
                             self.latest_position[inst] = qty
                             self.latest_position_detail[inst] = item
                 else:
-                    print("[CRO-ORDER] subscribed user.positions", flush=True)
+                    logger.info("CRO WS subscribed user.positions (print)")
                     logger.info("CRO WS subscribed user.positions")
 
             if "user.order" in channel:
@@ -179,7 +179,7 @@ class CroWSOrderClient:
                 if items:
                     self._dispatch_order_updates(items)
                 else:
-                    print("[CRO-ORDER] subscribed user.order", flush=True)
+                    logger.info("CRO WS subscribed user.order (print)")
                     logger.info("CRO WS subscribed user.order")
             return
 
@@ -211,11 +211,11 @@ class CroWSOrderClient:
 
     def _on_error(self, ws, error):
         logger.error("CRO WS order error: %s", error)
-        print(f"[CRO-ORDER] error: {error}", flush=True)
+        logger.error("CRO WS order error (print): %s", error)
 
     def _on_close(self, ws, close_status_code, close_msg):
         logger.warning("CRO WS order closed: %s %s", close_status_code, close_msg)
-        print(f"[CRO-ORDER] closed: {close_status_code} {close_msg}", flush=True)
+        logger.warning("CRO WS order closed (print): %s %s", close_status_code, close_msg)
         self.is_connected = False
         self.is_logged_in = False
         self._login_event.clear()
@@ -234,7 +234,7 @@ class CroWSOrderClient:
             socket_options = ((socket.IPPROTO_TCP, socket.TCP_NODELAY, 1),)
             while self.running:
                 try:
-                    print(f"[CRO-ORDER] connecting {self.ws_url}", flush=True)
+                    logger.info("CRO WS order connecting %s", self.ws_url)
                     self.ws = WebSocketApp(
                         self.ws_url,
                         on_open=self._on_open,
@@ -245,9 +245,9 @@ class CroWSOrderClient:
                     self.ws.run_forever(sockopt=socket_options)
                 except Exception as exc:
                     logger.warning("CRO WS order reconnect after error: %s", exc)
-                    print(f"[CRO-ORDER] reconnect after error: {exc}", flush=True)
+                    logger.info("CRO WS order reconnect after error: %s", exc)
                 if self.running:
-                    print("[CRO-ORDER] retry in 5s", flush=True)
+                    logger.info("CRO WS order retry in 5s")
                     time.sleep(5)
 
         self.running = True

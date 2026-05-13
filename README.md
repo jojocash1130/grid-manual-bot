@@ -2,6 +2,8 @@
 
 > A multi-user, **manual-direction grid trading bot** built for [Crypto.com Exchange](https://crypto.com/exch/bvmzsu9zuq) perpetual contracts. You pick the direction, the bot does the rest.
 
+![Dashboard Screenshot](dashboard.png)
+
 ---
 
 ## 🏦 About Crypto.com Exchange
