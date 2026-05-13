@@ -15,7 +15,7 @@
 | **Supported Coins** | 425+ cryptocurrencies |
 | **Trading Products** | Spot, Margin, Perpetuals, Futures, Options |
 | **Leverage** | Up to 200x on derivatives |
-| **Maker / Taker Fee** | 0.075% base (volume & CRO staking discounts available) |
+| **Maker / Taker Fee** | 0.075% base — **Maker fee drops to 0% at VIP 2!** Volume & CRO staking discounts available |
 | **Security** | $750M insurance fund, multi-jurisdiction licenses |
 | **Extras** | Visa Card, NFT Marketplace, DeFi Wallet, Earn |
 
@@ -193,14 +193,15 @@ If this bot is useful to you, the best way to support it is to **sign up for Cry
 
 ## 📬 Contact
 
-Have questions, feature requests, bug reports, or want to negotiate a **higher referral rebate**?
-
-> **Email: [0xkcya@gmail.com](mailto:0xkcya@gmail.com)**
-
-Feel free to reach out for:
-- 🐛 Bug reports & feature requests
-- 💬 General questions about grid trading
+**Business & Referral Inquiries — Crypto.com Global BD:**
+> **Telegram: [@beerponzi](https://t.me/beerponzi)**
 - 🤝 Higher rebate tiers for high-volume traders
+- 💬 Crypto.com exchange onboarding & fee structure questions
+- 📊 VIP tier consultation
+
+**Technical — Bug Reports & Feature Requests:**
+> **Email: [0xkcya@gmail.com](mailto:0xkcya@gmail.com)**
+- 🐛 Bug reports & feature requests
 - 🧑‍💻 Collaboration opportunities
 
 ---
