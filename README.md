@@ -15,7 +15,7 @@
 | **Supported Coins** | 425+ cryptocurrencies |
 | **Trading Products** | Spot, Margin, Perpetuals, Futures, Options |
 | **Leverage** | Up to 200x on derivatives |
-| **Maker / Taker Fee** | 0.075% base — **Maker fee drops to 0% at VIP 2!** Volume & CRO staking discounts available |
+| **Trading Fees** | **Maker 0% from VIP 2!** Volume & CRO staking discounts available |
 | **Security** | $750M insurance fund, multi-jurisdiction licenses |
 | **Extras** | Visa Card, NFT Marketplace, DeFi Wallet, Earn |
 
